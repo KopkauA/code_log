@@ -120,7 +120,7 @@ def r2_scores_generic(preds, targets, target_names):
 # ---------------------------------------------------------------------------
 
 def eval_kestrel_multitemp(labels_by_temp, code_dir, ckpt_dir, seeds, device):
-    from kestrel_ood_virus import KESTREL, IDPDataset, make_splits, build_kingdom_vocab, ALL_TARGETS
+    from kestrel_ood_virus.code.kestrel_ood_virus import KESTREL, IDPDataset, make_splits, build_kingdom_vocab, ALL_TARGETS
 
     rows = []
     for seed in seeds:
