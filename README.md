@@ -1,7 +1,7 @@
 # Experiment Log
 
 Index of every training/evaluation run in this repo, with a link to its
-detailed log (method, exact commands, compute used, and results).
+detailed log (method, exact commands, and compute used).
 
 ## Baselines — original BENDER dataset (`merged.csv`)
 
