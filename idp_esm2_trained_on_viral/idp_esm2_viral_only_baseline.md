@@ -57,8 +57,3 @@ non-viral-trained heads.
 - `{model}_viral_test_preds.csv` — per-sequence predictions vs. ground truth on the
   viral test split
 - `viral_only_r2_summary.csv` — per-target R² for each model, viral-train/viral-test
-
-## Results
-*(fill in after the run completes — R² per target, per model, per seed, and the
-comparison against the original non-viral-trained heads' OOD R² on the same viral
-test sequences)*

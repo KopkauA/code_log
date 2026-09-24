@@ -1,0 +1,18 @@
+Device: CUDA
+
+=== Loading BENDER data ===
+BENDER: 992 → 992 sequences (≤256 aa, all 5 targets present)
+BENDER non-OOD:       829 sequences
+BENDER OOD (Viruses): 163 sequences
+
+=== Loading ProtT5-XL ===
+
+Loading ProtT5-XL from Rostlab/prot_t5_xl_uniref50 …
+  Hidden dim: 1024  Params: 1,208,141,824
+
+=== Extracting embeddings ===
+Backbone offloaded — non-OOD (829, 1024), OOD (163, 1024)
+Saving embeddings to /home/a/akopkau/kestrel_se/prott5_emb_cache …
+  Saved.
+
+--extract-only: embeddings cached. Exiting.

@@ -70,8 +70,3 @@ partition), `seqdance` conda environment.
   (model, seed, temperature, target, r2)
 - `combined_multitemp_r2_seed_averaged.csv` — mean/std of R² across seeds,
   grouped by model × temperature × target
-
-## Results
-*(fill in after the run completes — how R² for each target shifts across the 5
-simulation temperatures for each model, and whether one model is more sensitive
-to the temperature at which ground truth was computed)*

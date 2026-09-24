@@ -21,14 +21,14 @@ Requires kestrel_ood_virus.py and idp_esm2_virus_fixed.py to be importable
 
 Usage:
     python run_multitemp_ood_eval.py \
-        --bender /home/a/akopkau/kestrel_se/merged.csv \
+        --bender ./merged.csv \
         --temp_csvs 278:bender_278K.csv 288:bender_288K.csv 300:bender_300K.csv \
                     310:bender_310K.csv 320:bender_320K.csv \
-        --code_dir /home/a/akopkau/kestrel_se/scripts \
-        --kestrel_ckpt_dir /home/a/akopkau/kestrel_se/checkpoints \
-        --esm2_ckpt_dir /home/a/akopkau/kestrel_se/checkpoints \
+        --code_dir ./scripts \
+        --kestrel_ckpt_dir ./checkpoints \
+        --esm2_ckpt_dir ./checkpoints \
         --seeds 42 67 93 \
-        --out /home/a/akopkau/kestrel_se/results/multitemp_ood
+        --out ./results/multitemp_ood
 """
 
 import argparse

@@ -60,7 +60,3 @@ partition).
 - `{model}_{test,ood}_r2.csv` — per-target R² on the non-viral test split and the
   viral OOD split
 - `{model}_{test,ood}_kingdom_r2.csv` — R² broken out by kingdom
-
-## Results
-*(fill in after the run completes — KESTREL vs. PhyschemMLP R² on non-viral test
-and viral OOD, per seed, and the seed-averaged summary)*

@@ -1,0 +1,5 @@
+0	Bacteria
+1	Fungi
+2	Mammals
+3	Plants
+4	Protists

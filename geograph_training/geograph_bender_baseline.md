@@ -58,7 +58,3 @@ python3 train_geograph_bender.py \
   val R²
 - Console/SLURM logs report final loss and per-feature R² (tagged `[GEO]`/`[GRF]`) on the
   held-out test split and the viral OOD split
-
-## Results
-*(fill in after the run completes — e.g. test/OOD R² per feature, averaged across the
-3 seeds)*

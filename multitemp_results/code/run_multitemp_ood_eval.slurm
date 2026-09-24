@@ -9,23 +9,23 @@
 #SBATCH --error=logs/multitemp_ood_eval_%j.err
 
 # NOTE: create logs/ BEFORE submitting:
-#   mkdir -p /home/a/akopkau/kestrel_se/scripts/logs
+#   mkdir -p ./scripts/logs
 
 source ~/.bashrc
 conda activate seqdance
 
-CODE_DIR=/home/a/akopkau/kestrel_se/scripts
-BENDER_CSV=/home/a/akopkau/kestrel_se/merged.csv
-KESTREL_CKPT_DIR=/home/a/akopkau/kestrel_se/checkpoints
-ESM2_CKPT_DIR=/home/a/akopkau/kestrel_se/checkpoints
-OUT_DIR=/home/a/akopkau/kestrel_se/results/multitemp_ood
+CODE_DIR=./scripts
+BENDER_CSV=./merged.csv
+KESTREL_CKPT_DIR=./checkpoints
+ESM2_CKPT_DIR=./checkpoints
+OUT_DIR=./results/multitemp_ood
 
 # EDIT these 5 paths to wherever you place the temperature CSVs on Gaivi
-TEMP_278=/home/a/akopkau/kestrel_se/bender_278K.csv
-TEMP_288=/home/a/akopkau/kestrel_se/bender_288K.csv
-TEMP_300=/home/a/akopkau/kestrel_se/bender_300K.csv
-TEMP_310=/home/a/akopkau/kestrel_se/bender_310K.csv
-TEMP_320=/home/a/akopkau/kestrel_se/bender_320K.csv
+TEMP_278=./bender_278K.csv
+TEMP_288=./bender_288K.csv
+TEMP_300=./bender_300K.csv
+TEMP_310=./bender_310K.csv
+TEMP_320=./bender_320K.csv
 
 python ${CODE_DIR}/run_multitemp_ood_eval.py \
     --bender ${BENDER_CSV} \

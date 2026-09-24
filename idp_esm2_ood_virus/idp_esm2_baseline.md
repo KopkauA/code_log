@@ -49,6 +49,3 @@ python run_idp_esm2_on_bender.py \
   OOD split, per model
 - `all_results.csv` — combined results across both model sizes and both splits
 
-## Results
-*(fill in after the run completes — R² per target for 8M and 150M on BENDER-test
-vs. OOD-Viruses, e.g. the ν R² summary table the script prints)*

@@ -60,8 +60,3 @@ for seeds 42, 67, 93.
   viral OOD split
 - `{model}_{test,ood}_kingdom_r2.csv` — R² broken out by kingdom
 - `{model}_{test,ood}_preds.csv` — per-sequence predictions vs. ground truth
-
-## Results
-*(fill in after the run completes — KESTREL vs. PhyschemMLP R² on bacteria-test and
-viral-OOD, per seed, and comparison against the original all-kingdom-trained model's
-bacteria-subset and viral-OOD performance)*

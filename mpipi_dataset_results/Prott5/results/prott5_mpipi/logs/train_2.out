@@ -1,0 +1,67 @@
+Array task 2 → seed 67
+Device: CUDA
+
+=== Loading BENDER data ===
+BENDER: 992 → 992 sequences (≤256 aa, all 5 targets present)
+BENDER non-OOD:       829 sequences
+BENDER OOD (Viruses): 163 sequences
+
+=== Loading cached embeddings from /home/a/akopkau/kestrel_se/prott5_emb_cache ===
+  non-OOD emb: (829, 1024)
+  OOD emb:     (163, 1024)
+
+============================================================
+SEED 67
+============================================================
+Random split: Train:663 Val:82 Test:84
+
+Training GeoHead for ProtT5-XL seed=67 (131,845 params)
+  Ep      Trn      Val    nu_R2
+------------------------------------
+   1   0.8764   1.0272    0.294
+   2   0.7225   0.8359    0.444
+   3   0.6802   0.8807    0.352
+   4   0.6455   0.8480    0.427
+   5   0.5979   0.9732    0.207
+   6   0.5676   0.9527    0.233
+   7   0.5543   0.9919    0.183
+   8   0.5221   1.0163    0.203
+   9   0.4884   0.9618    0.303
+  10   0.4824   1.0553    0.246
+  11   0.4723   1.0273    0.248
+  12   0.4498   1.0583    0.208
+  13   0.4011   1.0799    0.185
+  14   0.3890   1.1872    0.182
+  15   0.3767   1.1684    0.144
+  16   0.3605   1.1367    0.133
+  17   0.3338   1.0665    0.270
+  18   0.3137   1.1906    0.093
+  19   0.2904   1.3054    0.087
+  20   0.2761   1.2336    0.117
+  21   0.2742   1.2559    0.154
+  22   0.2612   1.2039    0.186
+  23   0.2553   1.2115    0.247
+  24   0.2235   1.2941    0.075
+Early stop @ ep 24
+
+-- ProtT5-XL seed=67 -- BENDER TEST (84 sequences) ----------------
+  Target           R2
+  --               --
+  rg           0.0806
+  ree          0.1393
+  nu           0.4635
+  delta        -0.0083
+  a0           0.4456
+  Saved per-sequence predictions → /home/a/akopkau/kestrel_se/results/prott5_newdataset/prott5xl_seed67_bender_test_predictions.csv
+
+-- ProtT5-XL seed=67 -- OOD Viruses (163 sequences) ----------------
+  Target           R2
+  --               --
+  rg           0.0395
+  ree          0.0970
+  nu           0.5340
+  delta        -0.0080
+  a0           0.5070
+  Saved per-sequence predictions → /home/a/akopkau/kestrel_se/results/prott5_newdataset/prott5xl_seed67_ood_viruses_predictions.csv
+
+All done. Results in /home/a/akopkau/kestrel_se/results/prott5_newdataset

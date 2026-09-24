@@ -1,0 +1,23 @@
+
+======================================================================
+AGGREGATING results across seeds …
+
+  bender_test
+  Target           mean      std
+  --                 --       --
+  rg             0.1047   0.0179
+  ree            0.1595   0.0178
+  nu             0.4499   0.0930
+  delta          0.0191   0.0244
+  a0             0.4655   0.0283
+
+  ood_viruses
+  Target           mean      std
+  --                 --       --
+  rg             0.0406   0.0495
+  ree            0.0910   0.0457
+  nu             0.4793   0.0881
+  delta         -0.0018   0.0222
+  a0             0.4860   0.0395
+
+Saved aggregated_results.csv → /home/a/akopkau/kestrel_se/results/prott5_newdataset
